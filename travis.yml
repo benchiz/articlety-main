@@ -19,4 +19,4 @@ deploy:
   github-token: $travis
   local_dir: public
   on:
-    branch: master
+    branch: main
