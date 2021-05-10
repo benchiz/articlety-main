@@ -20,14 +20,14 @@ app.post('/login', controller.login, urlencoded, function(req, res) {
     res.render('index', {data: req.body});
 })
 
-app.post('/', function(req, res) {
-    controller.create
-});
+// app.post('/', function(req, res) {
+//     controller.create
+// });
 
-if (Article.status === 1) {
-    app.get('/', controller.getAll, urlencoded, function(req, res) {
-        if (!req.body) return res.sendStatus(400)
-        console.log(req.body)
-        res.render('index', {data: req.body});
-    })
-}
+// if (Article.status === 1) {
+//     app.get('/', controller.getAll, urlencoded, function(req, res) {
+//         if (!req.body) return res.sendStatus(400)
+//         console.log(req.body)
+//         res.render('index', {data: req.body});
+//     })
+// }
